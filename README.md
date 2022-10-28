@@ -8,6 +8,8 @@ eg.: `latitude: 31.230416, longitude: 121.473701` (Shanghai, Huangpu District)
 
 *It has to be in Shanghai (or the city you are supposed to be in yesterday)*
 
+Account info is saved in Github secret.
+
 Run (Node.js environment is required):
 ```
 npm i testcafe
