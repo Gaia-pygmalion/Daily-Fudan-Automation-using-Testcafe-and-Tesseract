@@ -20,4 +20,5 @@ testcafe chrome:headless geoMock.js --skip-js-errors
 Reference:
 
 [Tesseract Doc](https://github.com/naptha/tesseract.js/blob/master/docs/api.md)
-[Testcafe Doc](https://testcafe.io/documentation/402632/api))
+
+[Testcafe Doc](https://testcafe.io/documentation/402632/api)
