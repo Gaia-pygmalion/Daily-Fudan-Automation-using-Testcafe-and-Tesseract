@@ -8,7 +8,7 @@ eg.: `latitude: 31.230416, longitude: 121.473701` (Shanghai, Huangpu District)
 
 *It has to be in Shanghai (or the city you are supposed to be in yesterday)*
 
-Account info is saved in Github secret.
+Account info is replaced with placeholders.
 
 Run (Node.js environment, chrome/edge/firefox are required):
 ```
