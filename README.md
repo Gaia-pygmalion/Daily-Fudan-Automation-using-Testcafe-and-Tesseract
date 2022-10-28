@@ -10,7 +10,7 @@ eg.: `latitude: 31.230416, longitude: 121.473701` (Shanghai, Huangpu District)
 
 Account info is saved in Github secret.
 
-Run (Node.js environment, chrome/edge/firefox is required):
+Run (Node.js environment, chrome/edge/firefox are required):
 ```
 npm i testcafe
 npm i tesseract.js
