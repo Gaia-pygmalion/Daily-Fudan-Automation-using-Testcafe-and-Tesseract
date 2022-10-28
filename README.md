@@ -1,6 +1,6 @@
-NOT FULLY TESTED! JUST FYI
+NOT FULLY TESTED, JUST FYI
 
-A draft, only for the purpose of (my) TA study.
+A draft, only for the purpose of TA study.
 
 You can manually set the current geolocation by editing Line 4, main.js
 
@@ -14,7 +14,7 @@ Run (Node.js environment, chrome/edge/firefox are required):
 ```
 npm i testcafe
 npm i tesseract.js
-testcafe chrome:headless geoMock.js --skip-js-errors
+testcafe chrome:headless main.js --skip-js-errors
 ```
 
 Reference:
@@ -22,3 +22,5 @@ Reference:
 [Tesseract Doc](https://github.com/naptha/tesseract.js/blob/master/docs/api.md)
 
 [Testcafe Doc](https://testcafe.io/documentation/402632/api)
+
+10/28/2022
