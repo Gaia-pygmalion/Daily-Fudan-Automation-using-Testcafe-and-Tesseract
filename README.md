@@ -1,8 +1,8 @@
-NOT FULLY TESTED! 
+NOT FULLY TESTED! JUST FYI
 
-A draft, only for the purpose of TA study.
+A draft, only for the purpose of (my) TA study.
 
-You can manually set the current geolocation by editing Line 4, geoMock.js
+You can manually set the current geolocation by editing Line 4, main.js
 
 eg.: `latitude: 31.230416, longitude: 121.473701` (Shanghai, Huangpu District)
 
