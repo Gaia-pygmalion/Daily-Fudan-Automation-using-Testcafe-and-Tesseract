@@ -1,3 +1,5 @@
+NOT FULLY TESTED! 
+
 A draft, only for the purpose of TA study.
 
 You can manually set the current geolocation by editing Line 4, geoMock.js
