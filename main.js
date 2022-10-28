@@ -1,6 +1,6 @@
 import { Selector, RequestLogger } from 'testcafe';
 import Tesseract from 'tesseract.js';
-
+// Mock Geolocation by setting your coordinate
 const mockGeolocationScript = 'navigator.geolocation.getCurrentPosition = success =>  success({ coords: { latitude: 31.230416, longitude: 121.473701, }, timestamp: Date.now() });';
 
 // UIS Login
@@ -21,6 +21,8 @@ const submitButton = Selector('div.footers a');
 const submitButtonCheck = Selector('.wapcf-btn.wapcf-btn-ok');
 const inputVerifCodeBox = Selector('.pop_yzm_inner input');
 const successCheckButton = Selector('p.success a');
+// User Info
+const username = getenv('USERNAME')
 
 // Helpers
 const logger = RequestLogger({ url: 'https://zlapp.fudan.edu.cn/backend/default/code', method: 'GET' }, {
@@ -56,6 +58,6 @@ test('Check geolocation', async t => {
         const { data: { text } } = await worker.recognize(res[0].response.body); 
         await t
             .typeText(inputVerifCodeBox, text.replace(/[^a-zA-Z]/g,""))
-            .debug()
-       
+            .click(submitButtonCheck)
+            .click(successCheckButton);
 });
