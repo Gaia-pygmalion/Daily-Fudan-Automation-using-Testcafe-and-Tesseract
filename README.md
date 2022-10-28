@@ -1,4 +1,4 @@
-Only for the purpose of TA study.
+A draft, only for the purpose of TA study.
 
 
 Run (Node.js environment is required):
