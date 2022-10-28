@@ -33,7 +33,8 @@ const logger = RequestLogger({ url: 'https://zlapp.fudan.edu.cn/backend/default/
 fixture `Mock geolocation`
     .page('https://uis.fudan.edu.cn/authserver/login?service=https%3A%2F%2Fzlapp.fudan.edu.cn%2Fa_fudanzlapp%2Fapi%2Fsso%2Findex%3Fredirect%3Dhttps%253A%252F%252Fzlapp.fudan.edu.cn%252Fsite%252Fncov%252FfudanDaily%26from%3Dwap')
     .clientScripts({ content: mockGeolocationScript })
-    .requestHooks(logger);
+    .requestHooks(logger)
+    .run({ quarantineMode: { successThreshold: 1, attemptLimit: 3 } });
 
 test('Check geolocation', async t => {
     await t
