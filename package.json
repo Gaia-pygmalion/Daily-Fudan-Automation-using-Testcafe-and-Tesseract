@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "test": "testcafe chrome:headless main.js -q attemptLimit=3,successThreshold=1 --skip-js-errors ",
+    "test:visible": "testcafe chrome main.js -q attemptLimit=3,successThreshold=1 --skip-js-errors"
+ },
+  "dependencies": {
+    "tesseract.js": "^3.0.3",
+    "testcafe": "^2.0.1"
+  }
+}
